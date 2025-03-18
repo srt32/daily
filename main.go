@@ -81,7 +81,8 @@ func main() {
 
 	// Combine all headlines into one prompt
 	combinedPrompt := "Create an artistic interpretation of today's news combining these headlines: " +
-		strings.Join(headlines, ". ")
+		strings.Join(headlines, ". ") +
+		". Weave these topics into a cohesive and imaginative narrative, avoiding divisive or sensitive framing."
 
 	// Truncate prompt to 1000 characters
 	if len(combinedPrompt) > 1000 {
